@@ -27,10 +27,9 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
         console.log(result)
         if(result.message === "Chave pix já resgatada"){
             window.location.href='api.html';
-        } else if(result.message === "OK"){
+        } else (result.message === "OK"){
             window.location.href='sucessod41d.html'
-        }
-            console.log(result); 
+        } 
         
     })
     .catch(error => {
