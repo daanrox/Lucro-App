@@ -15,7 +15,7 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
     };
 
 
-    fetch('https://apiloadbalancer-1860310990.sa-east-1.elb.amazonaws.com/create', {
+    fetch('https://api-pix-beta.vercel.app/create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
