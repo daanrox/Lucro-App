@@ -27,11 +27,11 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
         console.log(result)
         if(result.message === "Chave pix já resgatada"){
             window.location.href='api.html';
-        } else if(result.response === "OK"){
+        } else if(result.message === "OK"){
             window.location.href='sucessod41d.html'
-        }{
-            console.log(result); 
         }
+            console.log(result); 
+        
     })
     .catch(error => {
         console.error('Erro:', error);
