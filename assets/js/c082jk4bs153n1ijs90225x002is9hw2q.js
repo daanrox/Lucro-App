@@ -15,7 +15,7 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
     };
 
 
-   fetch('https://api-pix-beta.vercel.app/create', {
+   fetch('https://pix-6v3z2gpui-daanrox.vercel.app/create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
