@@ -1,6 +1,8 @@
 document.getElementById('formPix').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
+    let button = document.getElementById('submit');
+    button.disabled = true;
     
     let tipoChave = document.querySelector('input[name="tipoChave"]:checked');
     let tipoChaveValue = tipoChave ? tipoChave.value : '';
