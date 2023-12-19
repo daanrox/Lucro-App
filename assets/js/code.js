@@ -175,15 +175,15 @@ function showPopupB3() {
 
 
 
-function redirectToVsl(utm) {
+function redirectToVsl() {
 
-    window.location.href = "cadastro.html?"+utm;
+    window.location.href = "cadastro.html";
 
 }
 
 
 
-function showLoadingB3(utm) {
+function showLoadingB3() {
 
     var utm = utm;
 
@@ -195,7 +195,7 @@ function showLoadingB3(utm) {
 
     setTimeout(function() {
 
-    redirectToVsl(utm)
+    redirectToVsl()
 
     }, 4000)
 

@@ -7,12 +7,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link data-optimized="1" rel="stylesheet" href="assets/css/5921624bf5bbe4c8c091ef09226fa76f.css">
+        <meta name="author" content="Daanrox"/>
+        <meta name ="theme-color" content="#21983c"/>
+        <meta name="description" content="Códigos Lucrativos"/>
         <link rel="preconnect" href="../fonts.googleapis.com/index.html">
         <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin>
         <link data-optimized="1" href="assets/css/1c7a3d2ee9759dc256d915300855c494.css" rel="stylesheet">
         <link data-optimized="1" href="assets/css/ba9cbbe9240a489628be8eb27c56db8a.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/animated.css">
+        <link rel="icon" href="./assets/images/meta/money.png"/>
         <title>Codigos Lucrativos</title>
     </head>
 
@@ -66,45 +70,7 @@
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-        <script>
-            jQuery(document).ready(function(){
-            function limpaUrl() {     //função
-                urlpg = $(location).attr('href');   //pega a url atual da página
-                urllimpa = urlpg.split("?")[0]      //tira tudo o que estiver depois de '?'
 
-                window.history.replaceState(null, null, urllimpa); //subtitui a url atual pela url limpa
-            } 
-
-            setTimeout(limpaUrl, 0001) //chama a função depois de 4 segundos
-            });
-
-            function queryString(parameter) {  
-                var loc = location.search.substring(1, location.search.length);   
-                var param_value = false;   
-                var params = loc.split("&");   
-                for (i=0; i<params.length;i++) {   
-                    param_name = params[i].substring(0,params[i].indexOf('='));   
-                    if (param_name == parameter) {                                          
-                        param_value = params[i].substring(params[i].indexOf('=')+1)   
-                    }   
-                }   
-                if (param_value) {   
-                    return param_value;   
-                }   
-                else {   
-                    return false;   
-                }   
-            }
-
-            var utm = queryString("utm_source");
-            history.pushState({}, "", location.href);
-            history.pushState({}, "", location.href);
-            window.onpopstate = function () {
-                setTimeout(function() {
-                    window.location.href = "coddappbbd2.html?utm_source="+utm;
-                }, 0001);
-            };
-        </script>
 
         <script>
             var message="";

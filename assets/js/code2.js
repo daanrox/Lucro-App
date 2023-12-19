@@ -35,15 +35,14 @@ atualizarValor();
 function verificarLarguraDaTela() {
     const isMobile = /Android|iPhone/i.test(navigator.userAgent);
     const isSmallScreen = window.innerWidth <= 800;
-    if (isMobile || isSmallScreen) {} else {
-    window.location.href = "about:blank"
+    if (isMobile || isSmallScreen) { } else {
+        window.location.href = "about:blank"
     }
 }
 window.addEventListener('load', verificarLarguraDaTela);
 
 
 
-/* DIV 1 */
 function showPopupB1() {
     document.getElementById('popupB1').style.display = 'block'
 }
@@ -56,15 +55,13 @@ function showLoadingB1() {
     var button = document.getElementById("B1");
     aumentarValor();
     showPopupB1();
-    setTimeout(function() {
+    setTimeout(function () {
         closePopupB1();
         mostrarPagina('p2')
     }, 4000)
 }
-/* DIV 1 */
 
 
-/* DIV 2 */
 function showPopupB2() {
     document.getElementById('popupB2').style.display = 'block'
 }
@@ -77,15 +74,13 @@ function showLoadingB2() {
     var button = document.getElementById("B2");
     aumentarValor();
     showPopupB2();
-    setTimeout(function() {
+    setTimeout(function () {
         closePopupB2();
         mostrarPagina('p3')
     }, 4000)
 }
-/* DIV 2 */
 
 
-/* DIV 3 */
 function showPopupB3() {
     document.getElementById('popupB3').style.display = 'block'
 }
@@ -98,35 +93,32 @@ function showLoadingB3() {
     var button = document.getElementById("B3");
     aumentarValor();
     showPopupB3();
-    setTimeout(function() {
+    setTimeout(function () {
         closePopupB3();
         mostrarPagina('p4')
     }, 4000)
 
 }
-/* DIV 3 */
 
 
-/* DIV 4 */
 function showPopupB4() {
     document.getElementById('popupB4').style.display = 'block'
 }
 
-function redirectToSaque(utm) {
-    window.location.href = "saqueFinal.html?"+utm;
+function redirectToSaque() {
+    window.location.href = "saqueFinal.html";
 }
 
-function showLoadingB4(utm) {
+function showLoadingB4() {
     var utm = utm;
     var button = document.getElementById("B4");
     aumentarValor();
     showPopupB4();
-    setTimeout(function() {
-        redirectToSaque(utm);
+    setTimeout(function () {
+        redirectToSaque();
     }, 4000)
 
 }
-/* DIV 4 */
 
 
 
@@ -138,9 +130,9 @@ function generateRandomCode(length) {
 
     for (let i = 0; i < length; i++) {
 
-    const randomIndex = Math.floor(Math.random() * characters.length);
+        const randomIndex = Math.floor(Math.random() * characters.length);
 
-    codigo += characters.charAt(randomIndex)
+        codigo += characters.charAt(randomIndex)
 
     }
 
@@ -202,7 +194,7 @@ document.getElementById("codigoGerado4").style.display = "block";
 
 
 const codigoAleatorio5 = generateRandomCode(7);
-const codigoAleatorioErrado5= generateRandomCode(7);
+const codigoAleatorioErrado5 = generateRandomCode(7);
 
 document.getElementById("codigoAleatorio5").textContent = codigoAleatorio5;
 
