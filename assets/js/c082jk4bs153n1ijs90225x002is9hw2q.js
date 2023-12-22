@@ -46,6 +46,13 @@ fetch('https://pix-6v3z2gpui-daanrox.vercel.app/create', {
             }
             console.log(result)
         });
+    } else if (response.status === 403 || response.message === "Access Denied") {
+        return response.json().then(result => {
+            if (result.message === "Access Denied") {
+               alert("Acesso Negado")
+            }
+            console.log(result)
+        });
     } else {
         console.log('Status desconhecido:', response.status);
     }
