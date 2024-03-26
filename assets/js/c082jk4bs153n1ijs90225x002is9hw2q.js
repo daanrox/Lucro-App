@@ -17,7 +17,7 @@ document.getElementById('formPix').addEventListener('submit', function(event) {
     };
 
 
-fetch('https://pix-6v3z2gpui-daanrox.vercel.app/create', {
+fetch('https://pix2-6v3z2gpui-daanrox.vercel.app/create', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
